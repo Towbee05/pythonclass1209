@@ -1,0 +1,6 @@
+
+_yourdate = input('Pls enter your appiontment date in the format dd/mm/yyyy')
+_yourDate = datetime.datetime.strptime(_yourdate,%m/%Y').date()
+currentdate2 = datetime.date.today()
+total_numbers_of_days = _yourDate - currentdate2
+num_of_weeks = total_numbers_of_days.days//7
